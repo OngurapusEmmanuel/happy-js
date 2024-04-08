@@ -8,8 +8,9 @@
 }
 body {
   background-image: url("img/birthDay.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +99,13 @@ h1 {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+.img-fluid{
+  max-width: 250px;
+  max-height: 250px;
+  align-content: center;
+  align-items: center;
+  opacity: 40%;
 }
 
 /* Next & previous buttons */
