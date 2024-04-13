@@ -1,6 +1,7 @@
 let slideIndex = 0;
 showSlides();
 
+// const photos=["img/birthDay.jpg","img/sharon1.jpg","img/sharon2.jpg","img/sharon3,jpg","img/sharon4.jpg","img/sharon5.jpg"]
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -48,12 +49,41 @@ function formatTime(time) {
 countdown();
 
 setInterval(countdown, 1000);
-// function ChangeBackgroundImage(){
-//   var images=["sharon1.jpg","sharon2.jpg","sharon3.jpg","sharon4.jpg","sharon5.jpg"];
-//   var randomImage=images[Math.floor(Math.random()*images.length)];
 
-//   document.body.style.backgroundImage="url(randomImage)"
+
+let currentIndex=0;
+
+// function changeBackground(){
+//   currentIndex=(currentIndex+1)%photos.length;
+
+//   console.log("current background image :",photos[currentIndex]);
+
+//   document.body.style.backgroundImage=url(${photos[currentIndex]});
+
 // }
-// var delayInSeconds=5000;
+// function ChangeBackgroundImage(){
 
-// setTimeout(ChangeBackgroundImage,delayInSeconds);
+//   var randomChange=document.getElementById('body');
+// const images=['img/sharon1.jpg','img/sharon2.jpg','img/sharon3.jpg','img/sharon4.jpg','img/sharon5.jpg']
+
+//   var bg=Math.floor(Math.random()*images.length);
+
+//   randomChange.style.backgroundImage='url('+images[bg]+')';
+
+// var delayInSeconds=5000;
+// // }  var images=["img/sharon1.jpg","img/sharon2.jpg","img/sharon3.jpg","img/sharon4.jpg","img/sharon5.jpg"];
+
+// ChangeBackgroundImage();
+// setInterval(ChangeBackgroundImage,delayInSeconds);
+
+var randomChange=document.getElementById('body'),
+images=['img/1.jpg','img/2.jpg','img/3.jpg']
+
+var imgCount=images.length;
+
+var number=Math.floor(Math.random()*imgCount);
+
+window.onload=function(){
+
+  randomChange.style.backgroundImage='url('+images[number]+')'
+}
