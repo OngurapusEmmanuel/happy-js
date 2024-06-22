@@ -21,7 +21,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-const newYears = "26 April 2024";
+const newYears = "21 November 2024";
 
 function countdown() {
   const newYearsDate = new Date(newYears);
