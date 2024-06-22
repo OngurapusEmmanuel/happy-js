@@ -77,7 +77,7 @@ let currentIndex=0;
 // setInterval(ChangeBackgroundImage,delayInSeconds);
 
 var randomChange=document.getElementById('body'),
-images=['img/1.jpg','img/1.jpg','img/1.jpg']
+images=['img/birthDay.jpg']
 
 var imgCount=images.length;
 
